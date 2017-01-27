@@ -12,7 +12,7 @@ main(int argc, char *argv[])
 			goto sucks;
 		break;
 	ARGNUM:
-		if (testnum(argv[0], 0, INT_MAX)
+		if (testnum(argv[0], 0, INT_MAX))
 			goto sucks;
 		break;
 	default:

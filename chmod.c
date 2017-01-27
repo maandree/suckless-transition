@@ -5,6 +5,7 @@ int
 main(int argc, char *argv[])
 {
 	TESTBEGIN;
+	int i;
 
 	argv0 = argv[0], argc--, argv++;
 

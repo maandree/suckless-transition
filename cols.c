@@ -10,7 +10,7 @@ main(int argc, char *argv[])
 	case 'c':
 		break;
 	default:
-		goto sucks:
+		goto sucks;
 	} ARGEND
 
 	TESTEND;

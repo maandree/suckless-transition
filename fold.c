@@ -15,11 +15,11 @@ main(int argc, char *argv[])
 			goto sucks;
 		break;
 	ARGNUM:
-		if (testnum(argv[0], 1, INT_MAX)
+		if (testnum(argv[0], 1, INT_MAX))
 			goto sucks;
 		break;
 	default:
-		goto sucks:
+		goto sucks;
 	} ARGEND
 
 	TESTEND;

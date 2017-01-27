@@ -13,7 +13,7 @@ main(int argc, char *argv[])
 	case 'u':
 		break;
 	default:
-		goto sucks:
+		goto sucks;
 	} ARGEND
 
 	TESTEND;

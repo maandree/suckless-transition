@@ -14,7 +14,7 @@ main(int argc, char *argv[])
 			goto sucks;
 		break;
 	default:
-		goto sucks:
+		goto sucks;
 	} ARGEND
 
 	TESTEND;

@@ -21,7 +21,7 @@ main(int argc, char *argv[])
 	case 's':
 		break;
 	default:
-		goto sucks:
+		goto sucks;
 	} ARGEND
 
 	if (!have_mode)

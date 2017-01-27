@@ -18,7 +18,7 @@ main(int argc, char *argv[])
 	case 'n':
 		EARG();
 	default:
-		goto sucks:
+		goto sucks;
 	} ARGEND
 
 	if (argc > 2)
