@@ -30,10 +30,13 @@ BIN =\
 
 FLAGS = $(CFLAGS) $(CPPFLAGS) -DSUCKLESSDIR='"$(SUCKLESSDIR)"' -DSUCKYPATH='"$(SUCKYPATH)"'
 
-all: $(BIN)
+all: .gitignore $(BIN)
 
 %: %.c arg.h common.h
 	$(CC) $(FLAGS) $(LDFLAGS) -DUTIL='"%*"' -o $@ $<
+
+.gitignore:
+	@printf '/%s\n' .gitignore '*~' $(BIN) $(BIN:=.o) > .gitignore
 
 clean:
 	-rm $(BIN) $(BIN:=.o)
