@@ -1,0 +1,4 @@
+Log usage of non suckless conforming use, unless the use resulted in an error.
+
+expr (suckless does not support bigint)
+find
